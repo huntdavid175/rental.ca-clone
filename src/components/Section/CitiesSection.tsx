@@ -53,11 +53,8 @@ const CitiesSection: React.FC = () => {
           {apartmentLocations.map((locationArray, index) => (
             <div key={index}>
               {locationArray.map((location) => (
-                <Link to="#">
-                  <p
-                    key={location.name}
-                    className="py-2 text-lg text-zinc-600 hover:text-defaultColor duration-300"
-                  >
+                <Link to="#" key={location.name}>
+                  <p className="py-2 text-lg text-zinc-600 hover:text-defaultColor duration-300">
                     {location.name} Apartments
                   </p>
                 </Link>

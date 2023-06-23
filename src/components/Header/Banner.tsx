@@ -1,5 +1,5 @@
 import React from "react";
-import SearchIcon from "@mui/icons-material/Search";
+import InputWithIcon from "../Form/InputWithIcon";
 
 const Banner: React.FC = () => {
   return (
@@ -11,14 +11,7 @@ const Banner: React.FC = () => {
         <p className="text-lg text-gray-200">
           Thousands of apartments, houses, and condos for rent across Canada
         </p>
-        <div className="w-full bg-white px-6 py-2 flex justify-center items-center rounded-sm">
-          <SearchIcon className="text-[#3CB6D3]" />
-          <input
-            type="text"
-            className="w-full border-none  focus:ring-none text-xs"
-            placeholder="Search City, Neighbourhood, Address or Ad#"
-          />
-        </div>
+        <InputWithIcon placeholder="Search City, Neighbourhood, Address or Ad #" />
         <div className="w-full"></div>
       </div>
     </div>

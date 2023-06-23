@@ -1,17 +1,24 @@
 import React from "react";
-import ListAltIcon from "@mui/icons-material/ListAlt";
 
 interface MobileAppButtonProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   title: string;
+  className?: string;
+  textColor?: string;
 }
 
 const MobileAppButton: React.FC<MobileAppButtonProps> = ({
   children,
   title,
+  className,
+  textColor,
 }) => {
   return (
-    <button className="p-3 text-zinc-600 rounded-2xl text-lg">
+    <button
+      className={`p-3 ${
+        textColor ? textColor : "text-zinc-600"
+      } rounded-2xl text-lg ${className}`}
+    >
       <span className="mr-1">{children}</span>
       {title}
     </button>
