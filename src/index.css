@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-size: border-box;
+}
+
+.bg-custom-background {
+  background-color: #3cb6d3;
+  background-image: url("https://rentals.ca/static/rentalsca-phoenix/img/hero-bg.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 1280px;
+}
